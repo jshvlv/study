@@ -1,7 +1,10 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MusicPlayer {
-    private Music music;
+    private List<Music> music = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -23,16 +26,19 @@ public class MusicPlayer {
     private int volume;
 
 
-    public void setMusic(Music music) {
+    public void setMusic(List<Music> music) {
         this.music = music;
     }
     public MusicPlayer(){}
     //This is IoC
-    public  MusicPlayer(Music music){
+    public  MusicPlayer(List<Music> music){
         this.music = music;
     }
 
     public void playMusic(){
-        System.out.println("Playing: " + music.getSong() + " \nPlayer name: " + this.getName() + ", volume: " + this.getVolume());
+        System.out.println("Player: "  + this.getName() + " volume: " + this.getVolume());
+        for (int i = 0; i < music.size(); i++) {
+            System.out.println(music.get(i).getSong());
+        }
     }
 }
