@@ -1,2 +1,5 @@
-package org.example;public enum Genres {
+package org.example;
+
+public enum Genres {
+    CLASSICAL, ROCK
 }
