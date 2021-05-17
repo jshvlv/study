@@ -1,2 +1,2 @@
 #Aloha!
-This is my studieng and hobbies repo =)
+Nothing interesting but just studiyng repo
