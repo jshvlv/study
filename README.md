@@ -1,2 +1,2 @@
-#Aloha!
-Nothing interesting but just studiyng repo
+Aloha!
+This is another spring repo from studying process. 
